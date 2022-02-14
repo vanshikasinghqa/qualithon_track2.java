@@ -54,7 +54,7 @@ public class MovieSearchTest {
      *
      **/
     @Test(dataProvider = "popularMovieTitles")
-    public void testSeachByExactMovieTitleReturnsMovieAsFirstResult(String title){
+    public void testSearchByExactMovieTitleReturnsMovieAsFirstResult(String title){
         // get MoviePage from imdb/rottentomato
         MoviePage movieOnImdbWeb = new WebApp(this.testSession)
             .launch()
