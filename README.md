@@ -31,13 +31,13 @@
 Submit the code at [submission form](https://www.cognitoforms.com/QualiTest2/Qualithon22ChallengeSubmission) link. All details about your solution (code, videos, documentation etc.) should be submitted in this form. This link will be live during the event only. Once the event is over the link will become inaccessible.
 
 ## FAQs
-###What should be the Team size to participate?
+#### What should be the Team size to participate?
 This is a Solo participation event. Each participant must submit their solution as individual and not a team.
 
-###How do I submit my solution
+#### How do I submit my solution
 Submit the code at [submission form](https://www.cognitoforms.com/QualiTest2/Qualithon22ChallengeSubmission) link. All details about your solution (code, videos, documentation etc.) should be submitted in this form. This link will be live during the event only. Once the event is over the link will become inaccessible.
 
-###What is the Evaluation criteria?
+#### What is the Evaluation criteria?
 A Panel of Judges will review each submission and rate the entry using following criteria:
 - Completeness: Points would be given for each obstacle/challenge cleared by submission. Bonus points would be given for completing the obstacle course in full.
 - Creativity: Points would be given for creativity and ideas used to implement the solution.
