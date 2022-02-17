@@ -3,7 +3,7 @@
 ## Challenge Objective
 1. Fix failing test scripts if the failure is not a defect. The web application under test is https://www.imdb.com/
 2. Create new test cases for imdb application. Test requirement and test method stub is available in test class
-3. Update tests code to execute tests on RottenTomatoes https://www.rottentomatoes.com/. Update page objects and functions for rottentomatoes.
+3. Update tests code to execute tests on Rotten Tomatoes https://www.rottentomatoes.com/. Update page objects and functions for rotten tomatoes.
 
 ## Test Cases
 ### Implemented Tests 
