@@ -27,3 +27,5 @@
   $> mvn clean test
 ```
 
+## Submission
+Submit the code at [submission form](https://www.cognitoforms.com/QualiTest2/Qualithon22ChallengeSubmission) link. All details about your solution (code, videos, documentation etc.) should be submitted in this form. This link will be live during the event only. Once the event is over the link will become inaccessible.
