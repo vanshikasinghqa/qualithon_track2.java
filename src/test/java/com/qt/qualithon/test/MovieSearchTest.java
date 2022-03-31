@@ -1,6 +1,7 @@
 package com.qt.qualithon.test;
 
-//import java.lang.reflect.Method;
+import java.lang.reflect.Method;
+
 
 import org.testng.annotations.*;
 //import org.testng.Reporter;
@@ -81,7 +82,7 @@ public class MovieSearchTest {
 
         // get Movie metadata from http://www.omdbapi.com/
         Movie movie = new OMDbAPI().getMovie(title);
-        assertThat(movieOnImdbWeb.releaseYear()).isEqualTo(movie.releaseYear());
+        assertThat((movieOnImdbWeb.releaseYear()).substring(0,4)).isEqualTo(movie.releaseYear());
     }
 
     /**
@@ -161,7 +162,8 @@ public class MovieSearchTest {
 
         // get Movie metadata from http://www.omdbapi.com/
         Movie movie = new OMDbAPI().getMovie(title);
-        assertThat(movieOnImdbWeb.maturityRating()).isEqualTo(movie.rated());
+        String [] expectedmaturityrating = movieOnImdbWeb.releaseYear().split("\n");
+        assertThat(expectedmaturityrating[1]).isEqualTo(movie.maturityrating());
         
     }
 
@@ -182,7 +184,8 @@ public class MovieSearchTest {
 
         // get Movie metadata from http://www.omdbapi.com/
         Movie movie = new OMDbAPI().getMovie(title);
-        assertThat(movieOnImdbWeb.imdbRating()).isEqualTo(movie.imdbRating());
-        throw new Exception("Test Pending");
+        String [] expectedimdb = movieOnImdbWeb.imdbRating().split("\n");
+        assertThat(expectedimdb[1]).isEqualTo(movie.imdbRating());
+        //throw new Exception("Test Pending");
     }
 }

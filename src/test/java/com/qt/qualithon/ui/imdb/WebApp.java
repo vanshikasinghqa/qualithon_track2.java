@@ -1,8 +1,6 @@
 package com.qt.qualithon.ui.imdb;
-
 import com.qt.qualithon.TestSession;
 import com.qt.qualithon.ui.Page;
-import com.qt.qualithon.ui.imdb.HomePage;
 
 /**
  * entry class to hold IMDB Web Application UI Model/Page Objects

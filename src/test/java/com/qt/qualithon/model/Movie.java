@@ -16,6 +16,7 @@ public class Movie{
     List<String> writers;
     String rated;
     String imdbRating;
+	private String maturityrating;
 
     public Movie(){
         this.genres = new ArrayList<>();
@@ -142,12 +143,30 @@ public class Movie{
     public List<String> writers(){
         return this.writers;
     }
+    
+    /**
+    * a pretty formated representation of movie metadata
+    *
+    * @return pretty formated movie metadata
+    **/
+    
+    public String toString(){
+    	return "Title: " + this.title + " (" + this.releaseYear + ")" + "\n"
+    	+"Director: " + this.director + "\n"
+    	+"Genres: " + String.join(",", this.genres) + "\n"
+    	+"Writers: " + String.join(",", this.writers);
+    	}
 
     /**
      * set movie maturity rating
      * 
      * @param rated movie maturity rating
      */
+    
+    public void setmaturityrating(String maturityrating){
+    	this.maturityrating = maturityrating;
+    }
+    
     public void setRated(String rated){
         this.rated = rated;
     }
@@ -156,41 +175,25 @@ public class Movie{
      * 
      * @return rated movie maturity rating
      */
-
-     public String rated(){
-        return this.rated;
-     }
-
-    /**
-     * get movie imdbRating rating
-     * 
-     * @param rated movie imdbRating rating
-     */
-
-     public void setimdbRating(String imdbRating){
-         this.imdbRating = imdbRating;
-     }
-
-    /**
-     * get movie imdbRating rating
-     * 
-     * @return rated movie imdbRating rating
-     */
-    public String imdbRating() {
-        return this.imdbRating;
+    public String maturityrating(){
+    	return this.maturityrating;
     }
 
     /**
-     * a pretty formated representation of movie metadata
-     *
-     * @return    pretty formated movie metadata
-     **/
-    public String toString(){
-      return "Title: " + this.title + " (" + this.releaseYear + ")" + "\n"
-            +"Director: " + this.director + "\n"
-            +"Genres: " + String.join(",", this.genres) + "\n" 
-            +"Writers: " + String.join(",", this.writers) + "\n"
-            +"Rated: " + this.rated + "\n"
-            +"imdbRating: "+ this.imdbRating; 
-    }
+    * set imdb rating
+    *
+    * @param
+    **/
+    
+    public void setimdbRating(String imdbRating){
+    	this.imdbRating = imdbRating;
+    	}
+    	/**
+    	* get imdb rating
+    	*
+    	* @return imdb rating
+    	**/
+    	public String imdbRating(){
+    	return this.imdbRating;
+    	}
 }

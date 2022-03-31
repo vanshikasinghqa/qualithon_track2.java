@@ -18,7 +18,7 @@ public class TestSession {
     /**
      * get browser driver instance
      *
-     * @return    webdriver instance of browser
+     * @return webdriver instance of browser
      **/
     public WebDriver driver(){
         return this.webDriver.get();
